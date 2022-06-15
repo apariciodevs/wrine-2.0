@@ -16,7 +16,6 @@ const Layout = ({ children }) => {
     <Box width={'100vw'} min-height={'100vh'} bg={bodyBg}>
         <Navbar></Navbar>
         { children }
-        <Footer></Footer>
     </Box>
   )
 };

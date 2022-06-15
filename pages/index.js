@@ -7,6 +7,8 @@ import Image from 'next/image'
 //components
 import Hero from '../components/Hero'
 import Layout from '../components/Layout'
+import HeroImage from '../components/HeroImage'
+import Features from '../components/Features'
 
 export default function Home() {
   return (
@@ -19,6 +21,7 @@ export default function Home() {
 
       <main>
       <Hero></Hero>
+      
       </main>
 
      
