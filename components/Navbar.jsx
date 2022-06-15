@@ -16,7 +16,6 @@ export default function Navbar() {
   const isDark = colorMode === "dark";
   const [display, changeDisplay] = useState("none");
   const bg = useColorModeValue("gray.50", "gray.900");
-  const bodyBg = useColorModeValue("gray.100", "gray.900")
   const color = useColorModeValue("gray.900", "gray.50");
 
   return (

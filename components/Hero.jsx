@@ -7,13 +7,24 @@ import {
   Heading,
   Flex,
   Image,
+  useColorMode,
+  useColorModeValue,
+
 } from "@chakra-ui/react";
+
+import { useState } from "react";
 
 
 import browserLight from "../public/browser-light.png"
 
 
+
 const Hero = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
+  const isDark = colorMode === "dark";
+  const [display, changeDisplay] = useState("none");
+  const bg = useColorModeValue("gray.50", "gray.900");
+
   return (
     <Box px={8} py={24} mx="auto"
     minH={'80vh'}>
@@ -29,6 +40,9 @@ const Hero = () => {
           md: "center",
         }}
       >
+
+      {/*====================Title==========================*/}
+
         <Heading
           mb={6}
           fontSize={{
@@ -51,16 +65,25 @@ const Hero = () => {
             display={{
               base: "block",
               lg: "inline",
+          
             }}
             w="full"
             bgClip="text"
             bgGradient="linear(to-r, green.400,purple.500)"
             fontWeight="extrabold"
+
+            
           >
-            customer feedback
+            web solutions
           </Text>{" "}
           in one single place.
         </Heading>
+
+
+        {/*=====================Hero Text============================ */}
+
+
+
         <Text
           px={{
             base: 0,
@@ -76,13 +99,13 @@ const Hero = () => {
             color: "gray.400",
           }}
         >
-          Hellonext is a feature voting software where you can allow your users
-          to vote on features, publish roadmap, and complete your customer
-          feedback loop.
-        </Text>
+
+          Digital solutions for those who do things that matter. Take your business to the next level with us and watch it reach it's full potential.
+
+          </Text>
 
   
-        {/* Button stack */}
+        {/*  =================Button stack================== */}
 
         <Stack
           direction={{
@@ -115,6 +138,7 @@ const Hero = () => {
             }}
             size="lg"
             cursor="pointer"
+          
           >
             Get Started
             <Icon boxSize={4} ml={1} viewBox="0 0 20 20" fill="currentColor">
