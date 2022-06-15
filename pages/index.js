@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
+import { Flex } from '@chakra-ui/react'
+
 
 
 
@@ -19,10 +21,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <Flex flexDirection={'column'} alignItems='center'>
       <Hero></Hero>
-      
-      </main>
+    <Features></Features>      
+      </Flex>
 
      
     </div>

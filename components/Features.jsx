@@ -1,9 +1,9 @@
-import { Box, Flex, Icon,  } from "@chakra-ui/react";
+import { Box, Flex, Icon, Text, SimpleGrid, Heading } from "@chakra-ui/react";
 
-() => {
-    const Features = (props) => {
+export default function Features() {
+    const Feature = (props) => {
       return (
-        <Box>
+        <Box >
           <Flex
             alignItems="center"
             justifyContent="center"
@@ -13,7 +13,7 @@ import { Box, Flex, Icon,  } from "@chakra-ui/react";
             rounded="full"
             color={`${props.color}.600`}
             _dark={{
-              color: `${props.color}.100`,
+              color: `${props.color}.900`,
             }}
             bg={`${props.color}.100`}
           >
@@ -26,17 +26,18 @@ import { Box, Flex, Icon,  } from "@chakra-ui/react";
               {props.icon}
             </Icon>
           </Flex>
-          <chakra.h3
+          <Heading
             mb={2}
             fontWeight="semibold"
             lineHeight="shorter"
+            fontSize={"md"}
             _light={{
               color: "gray.900",
             }}
           >
             {props.title}
-          </chakra.h3>
-          <chakra.p
+          </Heading>
+          <Text
             fontSize="sm"
             color="gray.500"
             _dark={{
@@ -44,7 +45,7 @@ import { Box, Flex, Icon,  } from "@chakra-ui/react";
             }}
           >
             {props.children}
-          </chakra.p>
+          </Text>
         </Box>
       );
     };
@@ -53,7 +54,7 @@ import { Box, Flex, Icon,  } from "@chakra-ui/react";
       <Flex
         bg="#edf3f8"
         _dark={{
-          bg: "#3e3e3e",
+          bg: "gray.900",
         }}
         p={20}
         w="auto"
@@ -75,7 +76,7 @@ import { Box, Flex, Icon,  } from "@chakra-ui/react";
               lg: "center",
             }}
           >
-            <chakra.p
+            <Text
               mt={2}
               fontSize={{
                 base: "3xl",
@@ -89,11 +90,11 @@ import { Box, Flex, Icon,  } from "@chakra-ui/react";
               }}
             >
               Features
-            </chakra.p>
-            <chakra.p
+            </Text>
+            <Text
               mt={4}
               maxW="2xl"
-              fontSize="xl"
+              fontSize="2xl"
               mx={{
                 lg: "auto",
               }}
@@ -104,7 +105,7 @@ import { Box, Flex, Icon,  } from "@chakra-ui/react";
             >
               Get insights to dig down into what&apos;s powering your growth the
               most.
-            </chakra.p>
+            </Text>
           </Box>
           <SimpleGrid
             columns={{
