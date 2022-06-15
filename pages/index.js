@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 
+
+
 //components
 import Hero from '../components/Hero'
 import Layout from '../components/Layout'
@@ -17,6 +19,8 @@ export default function Home() {
 
       <main>
       <Hero></Hero>
+   
+      
       </main>
 
      

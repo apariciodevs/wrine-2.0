@@ -33,7 +33,7 @@ export default function Navbar() {
           {/* Desktop */}
 
           <Flex flex={1} ml={"0"}>
-            <Heading size={"lg"}>Web3s</Heading>
+            <Heading size={"lg"}>Wrine .</Heading>
           </Flex>
           <Flex
             alignItems={"center"}

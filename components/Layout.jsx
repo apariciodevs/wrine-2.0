@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Footer from "./Footer.tsx";
+
 import {  Box, useColorMode, useColorModeValue } from "@chakra-ui/react";
 
 
@@ -12,7 +13,7 @@ const Layout = ({ children }) => {
     const bodyBg = useColorModeValue("gray.100", "gray.900")
     const color = useColorModeValue("gray.900", "gray.50");
   return(
-    <Box height={'100vh'} bg={bodyBg}>
+    <Box width={'100vw'} height={'100vh'} bg={bodyBg}>
         <Navbar></Navbar>
         { children }
         <Footer></Footer>
