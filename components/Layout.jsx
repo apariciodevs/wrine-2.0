@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
     const bodyBg = useColorModeValue("gray.100", "gray.900")
     const color = useColorModeValue("gray.900", "gray.50");
   return(
-    <Box width={'100vw'} height={'100vh'} bg={bodyBg}>
+    <Box width={'100vw'} min-height={'100vh'} bg={bodyBg}>
         <Navbar></Navbar>
         { children }
         <Footer></Footer>

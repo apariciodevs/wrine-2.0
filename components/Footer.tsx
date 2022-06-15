@@ -58,9 +58,7 @@ import {
           spacing={4}
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}
-          bottom='0'
-          position={'fixed'}
-          >
+>
 
 
           <Heading size={'md'} >Wrine .</Heading>

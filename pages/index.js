@@ -19,8 +19,6 @@ export default function Home() {
 
       <main>
       <Hero></Hero>
-   
-      
       </main>
 
      

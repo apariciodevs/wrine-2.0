@@ -15,7 +15,8 @@ import browserLight from "../public/browser-light.png"
 
 const Hero = () => {
   return (
-    <Box px={8} py={24} mx="auto">
+    <Box px={8} py={24} mx="auto"
+    minH={'80vh'}>
       <Box
         w={{
           base: "full",
@@ -80,26 +81,7 @@ const Hero = () => {
           feedback loop.
         </Text>
 
-        <Box
-    w={{
-      base: "full",
-      md: 10 / 12,
-    }}
-    mx="auto"
-    mt={10}
-    textAlign="center"
-  >
-    <Image
-      w="full"
-      rounded="lg"
-      
-      src="/browser-light.png"
-      alt="Hellonext feedback boards software screenshot"
-    />
-  </Box>
-
-   
-
+  
         {/* Button stack */}
 
         <Stack
