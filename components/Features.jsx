@@ -62,8 +62,8 @@ export default function Features() {
         alignItems="center"
       >
         <Box
-          px={8}
-          py={20}
+          px={10}
+          py={10}
           mx="auto"
           bg="white"
           _dark={{
@@ -77,7 +77,7 @@ export default function Features() {
             }}
           >
             <Text
-              mt={2}
+              mt={0}
               fontSize={{
                 base: "3xl",
                 sm: "4xl",
@@ -89,10 +89,11 @@ export default function Features() {
                 color: "gray.900",
               }}
             >
-              Features
+              Solutions
             </Text>
             <Text
               mt={4}
+              mb={16}
               maxW="2xl"
               fontSize="2xl"
               mx={{
@@ -103,8 +104,7 @@ export default function Features() {
                 color: "gray.400",
               }}
             >
-              Get insights to dig down into what&apos;s powering your growth the
-              most.
+             How we add value to your business
             </Text>
           </Box>
           <SimpleGrid
@@ -123,7 +123,7 @@ export default function Features() {
           >
             <Feature
               color="red"
-              title="Personal Emails"
+              title="Brand Identity"
               icon={
                 <path
                   fillRule="evenodd"
@@ -132,13 +132,12 @@ export default function Features() {
                 />
               }
             >
-              Hand crafted dashboards for everything from Recurring Revenue to
-              Customer Churn.
+             Where everything starts. We create an identity for your brand defining fonts, color palette and an unique look.
             </Feature>
   
             <Feature
               color="pink"
-              title="Why a beaker icon?"
+              title="Web design"
               icon={
                 <path
                   fillRule="evenodd"
@@ -147,13 +146,12 @@ export default function Features() {
                 />
               }
             >
-              Your central hub that helps you see, and react to, absolutely
-              everything that’s happening.
+              We put all of our ideas together and come up with the design and overall look of ypur website.
             </Feature>
   
             <Feature
               color="yellow"
-              title="Clickable"
+              title="Web Development"
               icon={
                 <path
                   fillRule="evenodd"
@@ -162,13 +160,12 @@ export default function Features() {
                 />
               }
             >
-              Stay informed with daily, weekly, or monthly reports on all your
-              insights data.
+              Your design goes into production stage. Developed from scratch with a modern high end tech stack 
             </Feature>
   
             <Feature
               color="green"
-              title="Finger Printing"
+              title="SEO"
               icon={
                 <>
                   <path
@@ -189,12 +186,11 @@ export default function Features() {
                 </>
               }
             >
-              Our forecasting is your magical crystal ball that helps you predict
-              and plan for the future.
+          Be aware nowadays most SEO agencies are scammers, taking your money and applying useless practices such as meta tags. SEO is about the right content and we know about it.
             </Feature>
             <Feature
               color="purple"
-              title="Performance on Fire"
+              title="Deployment"
               icon={
                 <path
                   fillRule="evenodd"
@@ -203,12 +199,11 @@ export default function Features() {
                 />
               }
             >
-              How does your company compare? Learn how your company stacks up in
-              the industry.
+            Your website is ready to go live! at this stage you decide if we take care of the hosting provider or you ratter have the project handed over.
             </Feature>
             <Feature
               color="blue"
-              title="Love is in the Air"
+              title="Analytics and business intelligence"
               icon={
                 <path
                   fillRule="evenodd"
@@ -217,8 +212,7 @@ export default function Features() {
                 />
               }
             >
-              Organize your customers to bring meaningful and comparative insights
-              across your dashboards.
+              Your site is already live and receiving traffic. We Keep track of your data and analytics 
             </Feature>
           
   
