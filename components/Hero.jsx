@@ -175,7 +175,7 @@ const Hero = () => {
       <Image
         w="full"
         rounded="lg"
-        src={"/browser-light.png"}
+        src={"/browserWrine.png"}
         alt="Hellonext feedback boards software screenshot"
       />
     </Box>

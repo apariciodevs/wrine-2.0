@@ -43,10 +43,10 @@ export default function Features() {
           {props.title}
         </Heading>
         <Text
-          fontSize="sm"
-          color="gray.500"
+          fontSize="md"
+          color="gray.900"
           _dark={{
-            color: "gray.400",
+            color: "gray.300",
           }}
         >
           {props.children}
@@ -70,6 +70,7 @@ export default function Features() {
 
 <Box
       id="solutions"
+      
       w={{
         base: "full",
         md: 11 / 12,
@@ -146,6 +147,7 @@ export default function Features() {
           </Feature>
 
           <Feature
+          
             color="pink"
             title="Web design"
             icon={
@@ -161,6 +163,7 @@ export default function Features() {
           </Feature>
 
           <Feature
+          
             color="yellow"
             title="Web Development"
             icon={
