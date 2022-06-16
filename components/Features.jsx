@@ -4,7 +4,9 @@ export default function Features() {
   const Feature = (props) => {
     return (
       <Box>
+        
         <Flex
+        
           alignItems="center"
           justifyContent="center"
           w={8}
@@ -26,8 +28,11 @@ export default function Features() {
             {props.icon}
           </Icon>
         </Flex>
+
+
+  
         <Heading
-          mb={2}
+          mb={8}
           fontWeight="semibold"
           lineHeight="shorter"
           fontSize={"md"}
@@ -60,55 +65,57 @@ export default function Features() {
       w="auto"
       justifyContent="center"
       alignItems="center"
+      direction={'column'}
     >
-      <Box
+
+<Box
       id="solutions"
-        px={10}
-        py={10}
-        mx="auto"
-        bg="white"
-        _dark={{
-          bg: "gray.900",
+      w={{
+        base: "full",
+        md: 11 / 12,
+        xl: 9 / 12,
+      }}
+      mx="auto"
+      
+      textAlign={{
+        base: "left",
+        md: "center",
+      }}
+    >
+         <Heading
+        mb={6}
+        fontSize={{
+          base: "4xl",
+          md: "6xl",
         }}
-        shadow="dark-lg"
-        rounded={15}
+        fontWeight="bold"
+        lineHeight="none"
+        letterSpacing={{
+          base: "normal",
+          md: "tight",
+        }}
+        color="gray.900"
+        _dark={{
+          color: "gray.100",
+        }}
       >
-        <Box
-          textAlign={{
-            lg: "center",
+        How we{" "}
+        <Text
+          display={{
+            base: "block",
+            lg: "inline",
           }}
+          w="full"
+          bgClip="text"
+          bgGradient="linear(to-r, green.400,purple.500)"
+          fontWeight="extrabold"
         >
-          <Text
-            mt={0}
-            fontSize={{
-              base: "3xl",
-              sm: "4xl",
-            }}
-            lineHeight="8"
-            fontWeight="extrabold"
-            letterSpacing="tight"
-            _light={{
-              color: "gray.900",
-            }}
-          >
-            Solutions
-          </Text>
-          <Text
-            mt={4}
-            mb={16}
-            maxW="2xl"
-            fontSize="2xl"
-            mx={{
-              lg: "auto",
-            }}
-            color="gray.500"
-            _dark={{
-              color: "gray.400",
-            }}
-          >
-            How we add value to your business
-          </Text>
-        </Box>
+          create value
+        </Text>{" "}
+        for your business.
+      </Heading>
+      </Box>
+   
         <SimpleGrid
           columns={{
             base: 1,
@@ -121,7 +128,7 @@ export default function Features() {
             lg: 24,
           }}
           spacingY={20}
-          mt={6}
+          mt={12}
         >
           <Feature
             color="red"
@@ -150,7 +157,7 @@ export default function Features() {
             }
           >
             We put all of our ideas together and come up with the design and
-            overall look of ypur website.
+            overall look of your website.
           </Feature>
 
           <Feature
@@ -207,7 +214,7 @@ export default function Features() {
             }
           >
             Your website is ready to go live! at this stage you decide if we
-            take care of the hosting provider or you ratter have the project
+            take care of the hosting and domain provider or you ratter have the project
             handed over.
           </Feature>
           <Feature
@@ -225,7 +232,6 @@ export default function Features() {
             your data and analytics
           </Feature>
         </SimpleGrid>
-      </Box>
     </Flex>
   );
 }

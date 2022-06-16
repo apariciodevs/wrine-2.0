@@ -168,7 +168,7 @@ const Hero = () => {
         md: 10 / 12,
       }}
       mx="auto"
-      mt={20}
+      mt={10}
       textAlign="center"
 
     >
