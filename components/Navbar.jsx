@@ -44,9 +44,9 @@ export default function Navbar() {
               </Button>
             </NextLink>
 
-            <NextLink href="/about" passHref>
+            <NextLink href="#solutions" passHref>
               <Button as="a" variant="ghost" aria-label="About" my={5} w="100%">
-                About
+                Features
               </Button>
             </NextLink>
 
