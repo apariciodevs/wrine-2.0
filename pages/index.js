@@ -10,7 +10,7 @@ import { Flex } from '@chakra-ui/react'
 import Hero from '../components/Hero'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
-
+import Pricing from "../components/Pricing.tsx"
 export default function Home() {
   return (
     <div>
@@ -22,7 +22,9 @@ export default function Home() {
 
       <Flex flexDirection={'column'} alignItems='center'>
       <Hero></Hero>
-    <Features></Features>      
+      <Features></Features>     
+       
+      <Pricing></Pricing>
       </Flex>
 
      

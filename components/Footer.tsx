@@ -1,16 +1,21 @@
 import {
     Box,
+    Button,
     chakra,
     Container,
     Link,
     Stack,
     Text,
     useColorModeValue,
+    useColorMode,
     VisuallyHidden,
     Heading,
   } from '@chakra-ui/react';
   import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
   import { ReactNode } from 'react';
+  import { useState } from "react";
+  import { BsSun, BsMoonStarsFill, BsLightbulb } from 'react-icons/bs';
+
   
 
   
@@ -46,6 +51,9 @@ import {
   };
   
   export default function Footer() {
+    const { colorMode, toggleColorMode } = useColorMode();
+    const isDark = colorMode === "dark";
+    const [display, changeDisplay] = useState("none");
     return (
       <Box
         bg={useColorModeValue('white', 'gray.900')}
@@ -65,7 +73,8 @@ import {
 
 
           <Text>© 2022 Wrine Labs . All rights reserved</Text>
-          <Stack direction={'row'} spacing={6}>
+          <Stack
+           direction={'row'} spacing={4}>
             <SocialButton label={'Twitter'} href={'#'}>
               <FaTwitter />
             </SocialButton>
@@ -76,7 +85,17 @@ import {
               <FaInstagram />
             </SocialButton>
           </Stack>
+          <Button
+        aria-label="Toggle Color Mode"
+        onClick={toggleColorMode}
+        _focus={{ boxShadow: 'none' }}
+        w="fit-content"
+        >
+        {colorMode === 'light' ? <BsMoonStarsFill /> : <BsSun />}
+      </Button>
+          
         </Container>
+        
       </Box>
     );
   }
