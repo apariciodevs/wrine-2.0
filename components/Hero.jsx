@@ -9,6 +9,7 @@ import {
   Image,
   useColorMode,
   useColorModeValue,
+  
 
 } from "@chakra-ui/react";
 
@@ -161,6 +162,7 @@ const Hero = () => {
       </Stack>
     </Box>
     <Box
+     filter='grayscale(20%)'
       w={{
         base: "full",
         md: 10 / 12,
@@ -168,11 +170,11 @@ const Hero = () => {
       mx="auto"
       mt={20}
       textAlign="center"
+
     >
       <Image
         w="full"
         rounded="lg"
-        shadow="2xl"
         src="/browser-light.png"
         alt="Hellonext feedback boards software screenshot"
       />

@@ -9,7 +9,6 @@ import { Flex } from '@chakra-ui/react'
 //components
 import Hero from '../components/Hero'
 import Layout from '../components/Layout'
-import HeroImage from '../components/HeroImage'
 import Features from '../components/Features'
 
 export default function Home() {
