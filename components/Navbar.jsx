@@ -7,16 +7,29 @@ import {
   Button,
   IconButton,
   Heading,
+  ButtonProps,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { BsSun, BsMoonStarsFill, BsLightbulb } from 'react-icons/bs';
+
 import NextLink from "next/link";
+
+
+
+
+
 
 export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === "dark";
   const [display, changeDisplay] = useState("none");
+
   const bg = useColorModeValue("gray.50", "gray.900");
   const color = useColorModeValue("gray.900", "gray.50");
+
+
+
+
 
   return (
     <div>
@@ -78,7 +91,15 @@ export default function Navbar() {
               onClick={() => changeDisplay("flex")}
               display={["flex", "flex", "none", "none"]}
             />
-            <Switch ml={"2rem"} isChecked={isDark} onChange={toggleColorMode} />
+            <Button
+        aria-label="Toggle Color Mode"
+        onClick={toggleColorMode}
+        _focus={{ boxShadow: 'none' }}
+        w="fit-content"
+        >
+        {colorMode === 'light' ? <BsMoonStarsFill /> : <BsSun />}
+      </Button>
+
           </Flex>
         </Flex>
 
