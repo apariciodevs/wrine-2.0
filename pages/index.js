@@ -12,6 +12,7 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import Pricing from "../components/Pricing.tsx"
 import Contact from '../components/Contact'
+import Cta from '../components/cta'
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <Hero></Hero>
       <Features></Features>     
       <Pricing></Pricing>
+      <Cta></Cta>
       </Flex>
 
      

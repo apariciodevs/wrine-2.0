@@ -77,7 +77,7 @@ import {
           md: 'row',
         }}
         alignItems={{ md: 'center' }}>
-        <Heading size={'md'}>{title}</Heading>
+        <Heading  size={'md'}>{title}</Heading>
         <List spacing={3} textAlign="start">
           {options.map((desc, id) => (
             <ListItem key={desc.id}>
@@ -86,7 +86,7 @@ import {
             </ListItem>
           ))}
         </List>
-        <Heading size={'xl'}>{typePlan}</Heading>
+        <Heading color={useColorModeValue('gray.600', "gray.100")} size={'xl'}>{typePlan}</Heading>
         <Stack>
           <Button
             size="md"
@@ -119,7 +119,7 @@ import {
                 md: '40%',
               }}
               textAlign={'center'}>
-              <Heading size={'2xl'}>
+              <Heading  size={'2xl'}>
                 Find a plan that suits <Text   bgClip="text"
           bgGradient="linear(to-r, green.400,purple.500)">Your Business needs</Text>
               </Heading>

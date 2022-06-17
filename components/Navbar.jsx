@@ -69,7 +69,7 @@ export default function Navbar() {
               </Button>
             </NextLink>
 
-            <NextLink href="/contact" passHref>
+            <NextLink href="#contact" passHref>
               <Button
                 as="a"
                 variant="ghost"
@@ -158,7 +158,7 @@ export default function Navbar() {
                 Plans
               </Button>
             </NextLink>
-            <NextLink href="/" passHref>
+            <NextLink href="#contact" passHref>
               <Button
                 as="a"
                 variant="ghost"
