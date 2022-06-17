@@ -59,7 +59,13 @@ export default function Navbar() {
 
             <NextLink href="#solutions" passHref>
               <Button as="a" variant="ghost" aria-label="About" my={5} w="100%">
-                Features
+                Solutions
+              </Button>
+            </NextLink>
+
+            <NextLink href="#plans" passHref>
+              <Button as="a" variant="ghost" aria-label="About" my={5} w="100%">
+                Plans
               </Button>
             </NextLink>
 
@@ -135,13 +141,24 @@ export default function Navbar() {
               </Button>
             </NextLink>
 
-            <NextLink href="/about" passHref>
+            <NextLink href="#solutions" passHref>
               <Button as="a" variant="ghost" aria-label="About" my={5} w="100%">
-                About
+                Solutions
               </Button>
             </NextLink>
 
-            <NextLink href="/contact" passHref>
+            <NextLink href="#plans" passHref>
+              <Button
+                as="a"
+                variant="ghost"
+                aria-label="Contact"
+                my={5}
+                w="100%"
+              >
+                Plans
+              </Button>
+            </NextLink>
+            <NextLink href="/" passHref>
               <Button
                 as="a"
                 variant="ghost"

@@ -11,6 +11,8 @@ import Hero from '../components/Hero'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import Pricing from "../components/Pricing.tsx"
+import Contact from '../components/Contact'
+
 export default function Home() {
   return (
     <div>
@@ -20,10 +22,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Flex flexDirection={'column'} alignItems='center'>
+      <Flex overflow='hidden' justifyContent={'center'} flexDirection={'column'} alignItems='center'>
       <Hero></Hero>
       <Features></Features>     
-       
       <Pricing></Pricing>
       </Flex>
 

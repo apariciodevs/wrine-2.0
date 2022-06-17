@@ -8,29 +8,32 @@ import {
     ListItem,
     Stack,
     Text,
+    Flex,
     useColorModeValue,
   } from '@chakra-ui/react';
   import { FaCheckCircle } from 'react-icons/fa';
   
   const optionsLanding = [
-    { id: 1, desc: 'Single page' },
-    { id: 2, desc: 'Lorem, ipsum dolor.' },
-    { id: 3, desc: 'Monthly Updates' },
-    { id: 3, desc: 'Monthly Updates' },
+    { id: 1, desc: 'Landing page' },
+    { id: 2, desc: 'Custom domain' },
+    { id: 3, desc: 'Hosting' },
+    { id: 3, desc: 'SSL certificate' },
+    { id: 3, desc: 'Technical Support' },
   ];
 
-  const optionsPersonal = [
-    { id: 1, desc: '1 coconut' },
-    { id: 2, desc: 'Lorem, ipsum dolor.' },
-    { id: 3, desc: 'Monthly Updates' },
-    { id: 3, desc: 'Monthly Updates' },
-  ];
   const optionsBusiness = [
-    { id: 1, desc: '1 coconut' },
-    { id: 2, desc: 'Lorem, ipsum dolor.' },
-    { id: 3, desc: 'Monthly Updates' },
-    { id: 3, desc: 'Monthly Updates' },
+    { id: 1, desc: 'Multiple pages website' },
+    { id: 1, desc: 'Fully responsive' },
+    { id: 2, desc: 'Hosting' },
+    { id: 3, desc: 'Custom domain' },
+    { id: 3, desc: 'SSL certificate' },
+    { id: 3, desc: 'SEO Features' },
+    { id: 3, desc: 'Technical support' },
+    { id: 3, desc: 'Analytics and metrics' },
+    { id: 3, desc: 'Unlimited Bandwidth' },
+    { id: 3, desc: 'Video Storage' },
   ];
+
 
 
   interface PackageTierProps {
@@ -62,6 +65,7 @@ import {
   
     return (
       <Stack
+        width={'100vw'}
         p={3}
         py={3}
         justifyContent={{
@@ -96,8 +100,8 @@ import {
   };
   const Pricing = () => {
     return (
-      <Box py={6} px={5} min={'100vh'}>
-        <Stack spacing={4} width={'100%'} direction={'column'}>
+      <Flex  justifyContent={'center'} alignContent={'center'} alignItems={'center'} direction={'column'} id="plans" py={6} px={5} >
+        <Stack spacing={4}>
           <Stack
             p={5}
             alignItems={'center'}
@@ -133,18 +137,17 @@ import {
             </Stack>
           </Stack>
           <Divider />
-          <PackageTier title={'Landing'} typePlan="$500" options={optionsLanding} />
+          <PackageTier title={'Landing'} typePlan="CHF 500" options={optionsLanding} />
           <Divider />
           <PackageTier
-            title={'Personal'}
+            title={'Business'}
             checked={true}
-            typePlan="$800"
-            options={optionsPersonal}
+            typePlan="CHF 1000"
+            options={optionsBusiness}
           />
           <Divider />
-          <PackageTier title={'Business'} typePlan="$1000" options={optionsBusiness} />
         </Stack>
-      </Box>
+      </Flex>
     );
   };
   
