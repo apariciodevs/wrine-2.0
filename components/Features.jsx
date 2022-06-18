@@ -216,9 +216,7 @@ export default function Features() {
               />
             }
           >
-            Your website is ready to go live! at this stage you decide if we
-            take care of the hosting and domain provider or you ratter have the project
-            handed over.
+            Your website is ready to go live! aLL of our plans include a custom domain and hosting for a year
           </Feature>
           <Feature
             color="blue"

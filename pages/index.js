@@ -15,6 +15,7 @@ import Contact from '../components/Contact'
 import Cta from '../components/cta'
 
 export default function Home() {
+  
   return (
     <div>
       <Head>

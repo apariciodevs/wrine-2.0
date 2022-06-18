@@ -50,8 +50,8 @@ const Cta = () => {
               lg: "inline",
             }}
             fontSize={{
-              base: "4xl",
-              md: "6xl",
+              base: "5xl",
+              md: "5xl",
             }}
             w="full"
             bgClip="text"
@@ -67,8 +67,16 @@ const Cta = () => {
       <Heading
         mt={8}
         color={useColorModeValue("gray.900", "gray.100")}
-        size={"4xl"}
+        fontSize={{
+          base: "4xl",
+          md: "6xl",
+        }}
         mx='auto'
+        transition={'0.4s ease-out'}
+        _hover={{
+          bgClip:"text",
+          bgGradient:"linear(to-r, green.400,purple.500)"        }}
+
       >
         wrinelabs@gmail.com
       </Heading>
@@ -83,8 +91,11 @@ const Cta = () => {
             mt={14}
           aria-label="email"
           variant="ghost"
-          size="4xl"
-          fontSize="3xl"
+          size="6xl"
+          fontSize={{
+            base: "4xl",
+            md: "6xl",
+          }}
           icon={<MdEmail />}
           _hover={{
             bgGradient: "linear(to-r, green.100,purple.200)",

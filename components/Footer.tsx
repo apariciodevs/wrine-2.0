@@ -73,7 +73,8 @@ import {
 
 
           <Text>© 2022 Wrine Labs . All rights reserved</Text>
-          <Stack
+       
+       {/* Social    <Stack
            direction={'row'} spacing={4}>
             <SocialButton label={'Twitter'} href={'#'}>
               <FaTwitter />
@@ -85,6 +86,7 @@ import {
               <FaInstagram />
             </SocialButton>
           </Stack>
+          */}
           <Button
         aria-label="Toggle Color Mode"
         onClick={toggleColorMode}
