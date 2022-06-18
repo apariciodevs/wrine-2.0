@@ -58,13 +58,14 @@ import {
     checked = false,
   }: PackageTierProps) => {
     const colorTextLight = checked ? 'gray.900' : 'gray.900';
-    const bgColorLight = checked ? 'purple.200' : 'purple.200';
+    const bgColorLight = checked ? 'purple.100' : 'purple.100';
   
     const colorTextDark = checked ? 'gray.900' : 'gray.900';
-    const bgColorDark = checked ? 'purple.200' : 'purple.200';
+    const bgColorDark = checked ? 'purple.100' : 'purple.200';
   
     return (
       <Stack
+        
         width={'100vw'}
         p={3}
         py={3}
@@ -76,25 +77,27 @@ import {
           base: 'column',
           md: 'row',
         }}
-        alignItems={{ md: 'center' }}>
-        <Heading  size={'md'}>{title}</Heading>
-        <List spacing={3} textAlign="start">
+        alignItems={{ md: 'center' }}
+        
+        >
+        <Heading
+        transition={'0.4s ease'}
+         _hover={{
+          bgClip:"text",
+          bgGradient:"linear(to-r, green.400,purple.500)"        }}
+      
+        
+        size={'lg'}>{title}</Heading>
+        <List  spacing={3} textAlign="start">
           {options.map((desc, id) => (
             <ListItem key={desc.id}>
-              <ListIcon as={FaCheckCircle} color="green.500" />
+              <ListIcon as={FaCheckCircle} color="green.300" />
               {desc.desc}
             </ListItem>
           ))}
         </List>
-        <Heading color={useColorModeValue('gray.600', "gray.100")} size={'xl'}>{typePlan}</Heading>
-        <Stack>
-          <Button
-            size="md"
-            color={useColorModeValue(colorTextLight, colorTextDark)}
-            bgColor={useColorModeValue(bgColorLight, bgColorDark)}>
-            Get Started
-          </Button>
-        </Stack>
+        <Heading pt={8} color={useColorModeValue('gray.600', "gray.200")} size={'lg'}>{typePlan}</Heading>
+  
       </Stack>
     );
   };
@@ -111,33 +114,32 @@ import {
             }}
             direction={{
               base: 'column',
-              md: 'row',
+              md: 'column',
             }}>
             <Stack
               width={{
                 base: '100%',
-                md: '40%',
+                md: '100%',
               }}
               textAlign={'center'}>
               <Heading  size={'2xl'}>
-                Find a plan that suits <Text   bgClip="text"
+                Find a plan that suits <Text bgClip="text"
           bgGradient="linear(to-r, green.400,purple.500)">Your Business needs</Text>
               </Heading>
             </Stack>
             <Stack
+            
+            
               width={{
                 base: '100%',
                 md: '60%',
-              }}>
-              <Text textAlign={'center'}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                quod in iure vero. Facilis magnam, sed officiis commodi labore
-                odit.
-              </Text>
+              }}
+              >
+            
             </Stack>
-          </Stack>
+          </Stack   >
           <Divider />
-          <PackageTier title={'Landing'} typePlan="CHF 500" options={optionsLanding} />
+          <PackageTier  title={'Landing'} typePlan="CHF 500" options={optionsLanding} />
           <Divider />
           <PackageTier
             title={'Business'}
@@ -145,6 +147,7 @@ import {
             typePlan="CHF 1000"
             options={optionsBusiness}
           />
+         
           <Divider />
         </Stack>
       </Flex>
