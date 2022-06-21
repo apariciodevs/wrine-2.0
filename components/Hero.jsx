@@ -17,7 +17,6 @@ import { useState } from "react";
 import Link from "next/link";
 
 
-import browserLight from "../public/browser-light.png"
 
 
 
