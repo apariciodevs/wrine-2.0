@@ -88,9 +88,7 @@ const Hero = () => {
           color: "gray.300",
         }}
       >
-        Hellonext is a feature voting software where you can allow your users to
-        vote on features, publish roadmap, and complete your customer feedback
-        loop.
+       we are committed to help small businesses and creators reach their full potential through technology.
       </Text>
       <Stack
         direction={{

@@ -178,7 +178,7 @@ export default function Features() {
           }
         >
           Your design goes into production stage. Developed from scratch with a
-          modern high end tech stack
+          modern high end tech stack.
         </Feature>
 
         <Feature
@@ -224,7 +224,7 @@ export default function Features() {
           }
         >
           Your site is already live and receiving traffic. We Keep track of your
-          data and analytics
+          data and analytics.
         </Feature>
       </SimpleGrid>
     </Flex>
