@@ -216,7 +216,7 @@ export default function Features() {
               />
             }
           >
-            Your website is ready to go live! aLL of our plans include a custom domain and hosting for a year
+            Your website is ready to go live! all of our plans include a custom domain and web hosting for a year
           </Feature>
           <Feature
             color="blue"
