@@ -147,8 +147,7 @@ export default function Features() {
             </>
           }
         >
-          Where everything starts. We create an identity for your brand defining
-          fonts, color palette and an unique look.
+          Where everything starts. We create an identity for your brand.
         </Feature>
 
         <Feature

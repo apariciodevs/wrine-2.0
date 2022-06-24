@@ -84,7 +84,7 @@ import {
         transition={'0.4s ease'}
          _hover={{
           bgClip:"text",
-          bgGradient:"linear(to-r, green.400,purple.500)"        }}
+          bgGradient:"linear(to-r, green.400,purple.500)"  }}
       
         
         size={'lg'}>{title}</Heading>
@@ -103,7 +103,7 @@ import {
   };
   const Pricing = () => {
     return (
-      <Flex  justifyContent={'center'} alignContent={'center'} alignItems={'center'} direction={'column'} id="plans" py={6} px={5} >
+      <Flex justifyContent={'center'} alignContent={'center'} alignItems={'center'} direction={'column'} id="plans" py={6} px={5} >
         <Stack spacing={4}>
           <Stack
             p={5}

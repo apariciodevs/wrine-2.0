@@ -20,6 +20,7 @@ const Contact = () => {
   const btnHover = useColorModeValue("pink", "blue");
   const logInBoxBg = useColorModeValue("gray.200", "gray.900");
   return (
+  
     <Flex id="contact" height={'100vh'} direction={'column'} alignItems='center' justifyContent={'center'}>
       <Box   w={{
         base: "full",
