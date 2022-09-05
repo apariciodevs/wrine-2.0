@@ -147,7 +147,6 @@ export default function Features() {
             </>
           }
         >
-          Where everything starts. We create an identity for your brand.
         </Feature>
 
         <Feature
@@ -161,8 +160,7 @@ export default function Features() {
             />
           }
         >
-          We put all of our ideas together and come up with the design and
-          overall look of your website.
+        
         </Feature>
 
         <Feature
@@ -176,8 +174,7 @@ export default function Features() {
             />
           }
         >
-          Your design goes into production stage. Developed from scratch with a
-          modern high end tech stack.
+     
         </Feature>
 
         <Feature
@@ -193,13 +190,11 @@ export default function Features() {
             </>
           }
         >
-          Be aware nowadays most SEO agencies are scammers, taking your money
-          and applying useless practices such as meta tags. SEO is about the
-          right content and we know about it.
+         
         </Feature>
         <Feature
           color="purple"
-          title="Deployment"
+          title="Deployment/ Hosting"
           icon={
             <path
               fillRule="evenodd"
@@ -208,8 +203,7 @@ export default function Features() {
             />
           }
         >
-          Your website is ready to go live! all of our plans include a custom
-          domain and web hosting for a year.
+        
         </Feature>
         <Feature
           color="blue"
@@ -222,8 +216,7 @@ export default function Features() {
 
           }
         >
-          Your site is already live and receiving traffic. We Keep track of your
-          data and analytics.
+     
         </Feature>
       </SimpleGrid>
     </Flex>
