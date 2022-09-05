@@ -45,7 +45,7 @@ export default function Navbar() {
           {/* Desktop */}
 
           <Flex flex={1} ml={"0"}>
-            <Heading size={"lg"}>Wrine .</Heading>
+            <Heading size={"lg"}>Wrine Labs.</Heading>
           </Flex>
           <Flex
             alignItems={"center"}
