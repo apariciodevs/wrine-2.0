@@ -139,12 +139,12 @@ import {
             </Stack>
           </Stack   >
           <Divider />
-          <PackageTier  title={'Landing'} typePlan="CHF 500" options={optionsLanding} />
+          <PackageTier  title={'Landing'} typePlan="CHF 1000" options={optionsLanding} />
           <Divider />
           <PackageTier
             title={'Business'}
             checked={true}
-            typePlan="CHF 1000"
+            typePlan="CHF 2600"
             options={optionsBusiness}
           />
          

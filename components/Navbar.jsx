@@ -51,35 +51,7 @@ export default function Navbar() {
             alignItems={"center"}
             display={["none", "none", "flex", "flex"]}
           >
-            <NextLink href="/" passHref>
-              <Button as="a" variant="ghost" aria-label="Home" my={5} w="100%">
-                Home
-              </Button>
-            </NextLink>
-
-            <NextLink href="#solutions" passHref>
-              <Button as="a" variant="ghost" aria-label="About" my={5} w="100%">
-                Solutions
-              </Button>
-            </NextLink>
-
-            <NextLink href="#plans" passHref>
-              <Button as="a" variant="ghost" aria-label="About" my={5} w="100%">
-                Plans
-              </Button>
-            </NextLink>
-
-            <NextLink href="#contact" passHref>
-              <Button
-                as="a"
-                variant="ghost"
-                aria-label="Contact"
-                my={5}
-                w="100%"
-              >
-                Contact
-              </Button>
-            </NextLink>
+            
           </Flex>
 
           {/* Mobile */}
@@ -89,14 +61,7 @@ export default function Navbar() {
             mr="10px"
             justifyContent={"space-around"}
           >
-            <IconButton
-              aria-label="Open Menu"
-              size="lg"
-              mr={2}
-              icon={<HamburgerIcon />}
-              onClick={() => changeDisplay("flex")}
-              display={["flex", "flex", "none", "none"]}
-            />
+           
             <Button
         aria-label="Toggle Color Mode"
         onClick={toggleColorMode}
@@ -134,42 +99,7 @@ export default function Navbar() {
             />
           </Flex>
 
-          <Flex flexDir="column" align="center">
-            <NextLink href="/" passHref>
-              <Button as="a" variant="ghost" aria-label="Home" my={5} w="100%">
-                Home
-              </Button>
-            </NextLink>
-
-            <NextLink href="#solutions" passHref>
-              <Button as="a" variant="ghost" aria-label="About" my={5} w="100%">
-                Solutions
-              </Button>
-            </NextLink>
-
-            <NextLink href="#plans" passHref>
-              <Button
-                as="a"
-                variant="ghost"
-                aria-label="Contact"
-                my={5}
-                w="100%"
-              >
-                Plans
-              </Button>
-            </NextLink>
-            <NextLink href="#contact" passHref>
-              <Button
-                as="a"
-                variant="ghost"
-                aria-label="Contact"
-                my={5}
-                w="100%"
-              >
-                Contact
-              </Button>
-            </NextLink>
-          </Flex>
+        
         </Flex>
       </Flex>
     </div>
